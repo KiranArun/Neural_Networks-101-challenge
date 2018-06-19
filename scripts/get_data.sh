@@ -1,29 +1,29 @@
 #!/bin/bash
 
-wget https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_3367a.zip -P /content/Neural_Networks-101-challenge/data/
+wget https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_3367a.zip -P /content/cats_vs_dogs_data/
 
-unzip -qq /content/Neural_Networks-101-challenge/data/kagglecatsanddogs_3367a.zip -d /content/Neural_Networks-101-challenge/data/
+unzip -qq /content/cats_vs_dogs_data/kagglecatsanddogs_3367a.zip -d /content/cats_vs_dogs_data/
 
-mkdir /content/Neural_Networks-101-challenge/data/train
-mkdir /content/Neural_Networks-101-challenge/data/validation
+mkdir /content/cats_vs_dogs_data/train
+mkdir /content/cats_vs_dogs_data/validation
 
-mkdir /content/Neural_Networks-101-challenge/data/train/cat
-mkdir /content/Neural_Networks-101-challenge/data/train/dog
-mkdir /content/Neural_Networks-101-challenge/data/validation/cat
-mkdir /content/Neural_Networks-101-challenge/data/validation/dog
+mkdir /content/cats_vs_dogs_data/train/cat
+mkdir /content/cats_vs_dogs_data/train/dog
+mkdir /content/cats_vs_dogs_data/validation/cat
+mkdir /content/cats_vs_dogs_data/validation/dog
 
-mv /content/Neural_Networks-101-challenge/data/PetImages/Cat/9* /content/Neural_Networks-101-challenge/data/validation/cat/
-mv /content/Neural_Networks-101-challenge/data/PetImages/Dog/9* /content/Neural_Networks-101-challenge/data/validation/dog/
+mv /content/cats_vs_dogs_data/PetImages/Cat/9* /content/cats_vs_dogs_data/validation/cat/
+mv /content/cats_vs_dogs_data/PetImages/Dog/9* /content/cats_vs_dogs_data/validation/dog/
 
-rm /content/Neural_Networks-101-challenge/data/PetImages/Cat/8*
-rm /content/Neural_Networks-101-challenge/data/PetImages/Dog/8*
+rm /content/cats_vs_dogs_data/PetImages/Cat/8*
+rm /content/cats_vs_dogs_data/PetImages/Dog/8*
 
-mv /content/Neural_Networks-101-challenge/data/PetImages/Cat/* /content/Neural_Networks-101-challenge/data/train/cat/
-mv /content/Neural_Networks-101-challenge/data/PetImages/Dog/* /content/Neural_Networks-101-challenge/data/train/dog/
+mv /content/cats_vs_dogs_data/PetImages/Cat/* /content/cats_vs_dogs_data/train/cat/
+mv /content/cats_vs_dogs_data/PetImages/Dog/* /content/cats_vs_dogs_data/train/dog/
 
-rm -r /content/Neural_Networks-101-challenge/data/PetImages/
-rm /content/Neural_Networks-101-challenge/data/MSR-LA\ -\ 3467.docx
-rm /content/Neural_Networks-101-challenge/data/readme\[1\].txt
-rm /content/Neural_Networks-101-challenge/data/kagglecatsanddogs_3367a.zip
-rm /content/Neural_Networks-101-challenge/data/train/cat/666.jpg
-rm /content/Neural_Networks-101-challenge/data/train/dog/11702.jpg
+rm -r /content/cats_vs_dogs_data/PetImages/
+rm /content/cats_vs_dogs_data/MSR-LA\ -\ 3467.docx
+rm /content/cats_vs_dogs_data/readme\[1\].txt
+rm /content/cats_vs_dogs_data/kagglecatsanddogs_3367a.zip
+rm /content/cats_vs_dogs_data/train/cat/666.jpg
+rm /content/cats_vs_dogs_data/train/dog/11702.jpg
